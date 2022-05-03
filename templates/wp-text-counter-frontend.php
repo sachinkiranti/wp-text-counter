@@ -10,7 +10,8 @@
     <h3><?php echo $title; ?></h3>
 
     <textarea name="wp-text-counter-element" id="wp-text-counter-element" cols="30" rows="10"></textarea>
-
+    <br>
+    <button id="wp-text-counter-btn">Submit</button>
     <p>
         Total Words : <span class="wp-text-counter-words">0</span>
     </p>
