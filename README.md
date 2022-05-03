@@ -8,7 +8,7 @@ Download the zip file of the repository or clone the repository in your *wp-cont
 
     As traditionally upload the plugin to your wordpress site and activate :smiley: .
 
-    <img src="./arts/wp-text-counter-download.png" alt="Download zip" width="1100" height="500" />
+    <img src="./arts/wp-text-counter-download.png" alt="Download zip" />
 
 2. Clone the repository
     
@@ -28,7 +28,7 @@ Add the shortcode to wordpress POST/PAGE or anywhere you want to :
 
 The Output of the above shortcode :
 
-<img src="./arts/example-demo-wp-text-counter.png" alt="UI of the plugin" width="1100" height="500" />
+<img src="./arts/example-demo-wp-text-counter.png" alt="UI of the plugin" />
 
 ## License
 The Plugin is open-sourced software licensed under the [GNU license](LICENSE).
