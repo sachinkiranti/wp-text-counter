@@ -1,4 +1,4 @@
-This plugin simply generates the wordpress hash password and user password update sql query.
+This plugin simply count the number of words and characters.
 
 ## Installation
 
