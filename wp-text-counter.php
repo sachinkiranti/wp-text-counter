@@ -40,9 +40,14 @@ add_shortcode( 'wp-text-counter', 'wp_text_counter_frontend' );
 // Script
 if (! function_exists('wp_text_counter_enqueue_scripts')) :
 
-    function wp_text_counter_enqueue_scripts() {
-        wp_enqueue_script('sachinkiranti-textual', 'https://unpkg.com/@sachinkiranti/textual@1.0.1/dist/textual.min.js');
-        wp_enqueue_script( 'wtc-script', plugin_dir_url(__FILE__).'assets/wp-text-counter.js', array('jquery', 'sachinkiranti-textual'), null, true );
+    function wp_text_counter_enqueue_scripts()
+    {
+        global $post;
+
+        if ((is_single() || is_page()) && has_shortcode($post->post_content, 'wp-text-counter')) {
+            wp_enqueue_script('sachinkiranti-textual', 'https://unpkg.com/@sachinkiranti/textual@1.0.1/dist/textual.min.js');
+            wp_enqueue_script('wtc-script', plugin_dir_url(__FILE__) . 'assets/wp-text-counter.js', array('jquery', 'sachinkiranti-textual'), null, true);
+        }
     }
 
 endif;
